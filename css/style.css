@@ -1,0 +1,209 @@
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+@import url(../css/padrao.css);
+
+* {
+    font-family: 'Futura Std', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p, h1, h2 {
+    font-family: 'Futura Std', sans-serif;
+}
+
+/* Base global / Fundo geral verde */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 10px;
+    background-color: #d1e6d6; /* Fundo verde claro da página */
+}
+
+/* Card central principal em formato de cartão/Linktree */
+.bg1 {
+    background-color: #ffffff !important; /* Painel central branco */
+    width: 100%;
+    max-width: 450px;
+    min-height: auto;
+    padding: 30px 20px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto !important;
+}
+
+/* Banner superior */
+.banner {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Seção da Logo e Títulos */
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.logo .logo-img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #075900;
+    margin-bottom: 10px;
+}
+
+.logo h1 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #1a1a1a;
+}
+
+.logo h2 {
+    font-size: 0.9rem;
+    color: #4a4a4a;
+    margin: 0;
+}
+
+/* Seção principal de links */
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.site {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    a {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Estilização dos Botões */
+button.fxw {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 14px 20px;
+    border-radius: 16px;
+    border: 1px solid #e2e8f0;
+    background-color: #e6f7ed; /* Fundo suave nos botões para destacar do cartão branco */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button.fxw:hover {
+    background-color: #f0f4f1;
+    transform: translateY(-2px);
+}
+
+button.fxw div {
+    display: flex;
+    align-items: center;
+}
+
+button.fxw img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+button.fxw h1 {
+    font-size: 0.95rem;
+    font-weight: bold;
+    color: #222222;
+    margin: 0;
+}
+/* Estilização do Rodapé */
+footer {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #666666;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.75rem;
+}
+
+footer a {
+    color: #075900; /* Cor verde para combinar com o tema */
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: #003659;
+    text-decoration: underline;
+}
+
+/* padrão de tablet*/
+@media (max-width: 768px) {
+
+}
+
+/*padrão de celular*/
+@media (max-width: 450px) {
+    body {
+        padding: 10px 25px;
+    }
+
+    .bg1 {
+        padding: 20px 15px;
+        border-radius: 18px;
+    }
+
+    .logo .logo-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .logo h2 {
+        font-size: 0.85rem;
+    }
+
+    button.fxw {
+        padding: 12px 15px;
+    }
+
+    button.fxw h1 {
+        font-size: 0.90rem;
+    }
+}
